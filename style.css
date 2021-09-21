@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(rgb(168, 168, 236)  , rgb(230, 149, 149));
+}
+nav{
+    /* background-color:rgb(230, 225, 225); */
+    /* background-image: linear-gradient(rgb(247, 153, 153) , rgb(236, 65, 236)); */
+    /* padding: 1px; */
+    /* height: max-content; */
+    position: sticky;
+    top: 0px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+    padding: 5px;
+}
+input{
+    height: 1.5rem;
+    border: none;
+    border-radius: 50px;
+}
+.btn{
+    height: 1.7rem;
+    background-color:#08e;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logo{
+    font-size: 2vw;
+    font-weight: 600;
+}
+.inputList{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputList h2{
+    font-size: 3vw;
+}
+.inputList input{
+    width: 52vw;
+    height: 4vh;
+    margin: 20px;
+    padding: 5px;
+}
+.inputList textarea{
+    box-sizing: border-box;
+    max-width: 80%;
+    padding: 5px;
+    border: none;
+    border-radius: 10px 20px;
+
+}
+.submit-btn{
+    margin-top: 10px;
+    width:max-content;
+    height: 5vh;
+    padding-bottom: 30px;
+    font-size: 1.5vw;
+}
+.submit-btn:hover{
+    /* background-color: rgb(11, 196, 11); */
+    background-color: rgb(5, 95, 163);
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    /* border:2px solid red; */
+
+}
+.heading{
+    font-size: 2vw;
+    font-weight: 600;
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+    color: black;
+}
+th{
+    padding:2vh 6vw;
+}
+/* tbody{
+    padding: 0 2vw;
+} */
+td{
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+table{
+    margin: 0 20vw;
+    border-top: 1px solid black;
+}
+
+/* very important to understand */
+tbody td{
+    /* background-color: red; */
+    box-sizing: border-box;
+    min-width: 16vw;
+}
+thead th{
+    /* background-color: red; */
+    box-sizing: border-box;
+    max-width: 17vw;
+}
+
+.success{
+    width: 100%;
+    background-color: rgb(22, 167, 22);
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 20px;
+    visibility: hidden;
+    position: sticky;
+    top:40px;
+}
+.show{
+    visibility: visible;
+}
+
+.d-btn:hover{
+    background-color: rgb(224, 59, 59);
+}
+
+.searchShow{
+    max-width: max-content;
+    background-color: white;
+    position: fixed;
+    box-shadow:  0 3px 8px 1px black;
+    color: black(173, 171, 171);
+}
+
+@media only screen and ( max-width: 680px) {
+    .heading{
+        font-size: 5vw;
+    }
+    .submit-btn{
+        font-size: 4vw;
+        height: 2vh
+    }
+    .logo{
+        font-size: 4vw;
+    }
+    .navigation{
+        flex-direction: column;
+        align-items: center;
+    }
+    thead th{
+        box-sizing: border-box;
+        max-width: 25vw;
+    }
+    nav{
+        position: static;
+    }
+}

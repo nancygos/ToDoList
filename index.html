@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <div class="logo">ToDoList</div>
+            <div class="search">
+                <!-- <input type="text" placeholder="Search..." id="searchBox" onkeyup="searchHere"> -->
+                <!-- <button class="btn" id="searchButton">Search</button> -->
+
+                <!-- <div class="searchShow">aa</div> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="success" id="success">Successfully stored</div> -->
+    
+    <div class="inputList">
+        <h2>Enter Data</h2>
+        <input type="text" placeholder="Title" id="title">
+        <textarea name="text" id="text-area" cols="100" rows="10" placeholder="Description"></textarea>
+        <button type="submit" class="submit-btn btn" id="submitButton">Add to list</button>
+    </div>
+
+    <table class="table">
+       <div class="heading">Your ToDoList</div> 
+        <div class="content" id="content">
+
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableBody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum voluptatibus facilis commodi magni nam adipisci molestias minima vel. Aut.</td>
+                    <td><button class="btn">Delete</button></td>
+                </tr> -->
+
+            </tbody>
+
+        </div>
+
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
