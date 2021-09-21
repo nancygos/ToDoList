@@ -4,7 +4,10 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 body{
-    background-image: linear-gradient(rgb(168, 168, 236)  , rgb(230, 149, 149));
+    background-image: linear-gradient(rgb(168, 168, 236)  , rgb(247, 172, 172) );
+    /* background-color: red; */
+    /* background-repeat: no-repeat; */
+    max-height:max-content;
 }
 nav{
     /* background-color:rgb(230, 225, 225); */
